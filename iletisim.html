@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÜPRAŞ | İletişim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-banner">
+    ⚠ Bu site Web Tasarım dersi kapsamında yapılmıştır ve sitedeki bilgilerin geçerliliği yoktur.
+</div>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">TÜPRAŞ</div>
+        <div class="sidebar-close" id="sidebarClose">✕</div>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="index.html">🏠 Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">📖 Hakkımızda</a></li>
+        <li><a href="hizmetlerimiz.html">⚙️ Hizmetlerimiz</a></li>
+        <li><a href="surdurulebilirlik.html">🌱 Sürdürülebilirlik</a></li>
+        <li><a href="iletisim.html" class="active">📞 İletişim</a></li>
+    </ul>
+    <div class="sidebar-footer"><p>© 2025 TÜPRAŞ</p><p>Web Tasarım Projesi</p></div>
+</div>
+
+<div class="main-content">
+    <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
+
+    <nav class="top-nav">
+        <div class="container nav-wrapper">
+            <div class="logo-area"><div class="logo">TÜPRAŞ</div><div class="logo-sub">Enerjinin Geleceği</div></div>
+        </div>
+    </nav>
+
+    <section class="page-header"><div class="container"><h1>İletişim</h1><p>Bizimle iletişime geçin</p></div></section>
+
+    <section class="contact-page">
+        <div class="container contact-wrapper">
+            <div class="contact-info-box">
+                <h2>Bize Ulaşın</h2>
+                <div class="contact-item"><span class="contact-icon">📍</span><div><strong>Adres</strong><br>TÜPRAŞ Genel Müdürlüğü<br>Güneşli, İstanbul</div></div>
+                <div class="contact-item"><span class="contact-icon">📞</span><div><strong>Telefon</strong><br>+90 212 555 00 00</div></div>
+                <div class="contact-item"><span class="contact-icon">✉️</span><div><strong>E-posta</strong><br>info@tupras.com.tr</div></div>
+            </div>
+            <div class="contact-form-box">
+                <h2>Bize Yazın</h2>
+                <form id="contactForm">
+                    <div class="form-row"><input type="text" id="fullname" placeholder="Ad Soyad *" required></div>
+                    <div class="form-row"><input type="email" id="email" placeholder="E-posta Adresiniz"></div>
+                    <div class="form-row"><select id="subject"><option value="">Konu Seçiniz</option><option value="genel">Genel Bilgi</option><option value="yatirimci">Yatırımcı İlişkileri</option></select></div>
+                    <div class="form-row"><textarea id="message" rows="5" placeholder="Mesajınız *" required></textarea></div>
+                    <div class="form-row"><button type="submit" class="btn-primary submit-btn">Mesaj Gönder</button></div>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col"><h3>TÜPRAŞ</h3><p>Enerjinin Geleceği</p></div>
+            <div class="footer-col"><h4>Hızlı Bağlantılar</h4><ul><li><a href="index.html">Ana Sayfa</a></li><li><a href="hakkimizda.html">Hakkımızda</a></li></ul></div>
+            <div class="footer-col"><h4>İletişim</h4><p>📞 0212 555 00 00</p><p>✉️ info@tupras.com.tr</p></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 TÜPRAŞ - Web Tasarım Final Projesi | Ahmet Bertuğ Ersarı</p></div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+    const contactForm = document.getElementById('contactForm');
+    const formFeedback = document.getElementById('formFeedback');
+    if(contactForm){
+        contactForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            const fullname = document.getElementById('fullname').value.trim();
+            const message = document.getElementById('message').value.trim();
+            if(fullname === "" || message === ""){
+                formFeedback.innerHTML = "❌ Lütfen ad soyad ve mesaj alanını doldurunuz.";
+                formFeedback.style.color = "#e74c3c";
+            } else {
+                formFeedback.innerHTML = "✅ Mesajınız başarıyla alındı. (Demo)";
+                formFeedback.style.color = "#27ae60";
+                contactForm.reset();
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÜPRAŞ | Ana Sayfa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ZORUNLU KIRMIZI UYARI (20px sabit) -->
+<div class="top-banner">
+    ⚠ Bu site Web Tasarım dersi kapsamında yapılmıştır ve sitedeki bilgilerin geçerliliği yoktur.
+</div>
+
+<!-- SIDEBAR MENU (SOL TARAF AÇILIR/KAPANIR) -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">TÜPRAŞ</div>
+        <div class="sidebar-close" id="sidebarClose">✕</div>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="index.html" class="active">🏠 Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">📖 Hakkımızda</a></li>
+        <li><a href="hizmetlerimiz.html">⚙️ Hizmetlerimiz</a></li>
+        <li><a href="surdurulebilirlik.html">🌱 Sürdürülebilirlik</a></li>
+        <li><a href="iletisim.html">📞 İletişim</a></li>
+    </ul>
+    <div class="sidebar-footer">
+        <p>© 2025 TÜPRAŞ</p>
+        <p>Web Tasarım Projesi</p>
+    </div>
+</div>
+
+<!-- ANA İÇERİK -->
+<div class="main-content">
+    <!-- MENU BUTONU (ÜÇ ÇİZGİ) -->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="top-nav">
+        <div class="container nav-wrapper">
+            <div class="logo-area">
+                <div class="logo">TÜPRAŞ</div>
+                <div class="logo-sub">Enerjinin Geleceği</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span class="hero-tag">Türkiye'nin Küresel Gücü</span>
+            <h1>Enerjinin<br>Geleceğini İnşa Ediyoruz</h1>
+            <p>30 milyon ton/yıl işleme kapasitesi, 5 rafineri, 60 yılı aşkın tecrübe ile Türkiye'nin enerji bağımsızlığına katkı sağlıyoruz.</p>
+            <div class="hero-buttons">
+                <a href="hakkimizda.html" class="btn-primary">Kurumsal</a>
+                <a href="hizmetlerimiz.html" class="btn-outline">Ürünlerimiz</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title">Rakamlarla <span>TÜPRAŞ</span></h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-unit">Milyon Ton/Yıl</div>
+                    <div class="stat-desc">İşleme Kapasitesi</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-unit">Rafineri</div>
+                    <div class="stat-desc">Türkiye genelinde</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="60">0</div>
+                    <div class="stat-unit">Yıl</div>
+                    <div class="stat-desc">Sektör Tecrübesi</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-unit">+ Çalışan</div>
+                    <div class="stat-desc">Uzman kadro</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container about-wrapper">
+            <div class="about-text">
+                <span class="section-badge">Hakkımızda</span>
+                <h2>Türkiye'nin Lider Sanayi Kuruluşu</h2>
+                <p>TÜPRAŞ, 1983 yılından bu yana Türkiye'nin petrol ihtiyacının büyük bölümünü karşılayan, enerji sektörünün öncü kuruluşudur. İzmir, İzmit, Kırıkkale, Batman ve Mersin rafinerileriyle stratejik öneme sahiptir.</p>
+                <p>Sadece petrol değil, petrokimya, yenilenebilir enerji ve sürdürülebilirlik alanlarında da yatırımlar yaparak geleceğin enerjisini bugünden inşa ediyoruz.</p>
+                <a href="hakkimizda.html" class="link-more">Detaylı Bilgi →</a>
+            </div>
+            <div class="about-image">
+                <img src="https://picsum.photos/id/104/600/400" alt="TÜPRAŞ Rafineri">
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Hizmetlerimiz</span>
+                <h2>Enerji Değer Zincirinde<br>Kapsamlı Çözümler</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">⛽</div>
+                    <h3>Petrol Rafinasyonu</h3>
+                    <p>Kurşunsuz benzin, motorin, LPG, jet yakıtı, fuel-oil ve bitüm üretimi.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🧪</div>
+                    <h3>Petrokimya</h3>
+                    <p>Paraksilen, benzen, toluen, polipropilen gibi petrokimya hammaddeleri.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🌱</div>
+                    <h3>Yenilenebilir Enerji</h3>
+                    <p>GES, RES ve biyoyakıt yatırımları ile temiz enerji.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">📊</div>
+                    <h3>Enerji Ticareti</h3>
+                    <p>Yurt içi ve yurt dışı petrol ürünleri ticareti ve lojistik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sustainability-banner">
+        <div class="container sus-content">
+            <h2>Sürdürülebilirlik</h2>
+            <p>2050 yılına kadar karbon nötr olma hedefiyle çalışıyoruz. Atıkları kaynağa dönüştürüyor, temiz enerji yatırımlarımızla geleceği koruyoruz.</p>
+            <a href="surdurulebilirlik.html" class="btn-light">Detaylı Bilgi</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>TÜPRAŞ</h3>
+                <p>Enerjinin Geleceği</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                    <li><a href="surdurulebilirlik.html">Sürdürülebilirlik</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim</h4>
+                <p>📞 0212 555 00 00</p>
+                <p>✉️ info@tupras.com.tr</p>
+                <p>📍 İstanbul, Türkiye</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TÜPRAŞ - Web Tasarım Final Projesi | Ahmet Bertuğ Ersarı | Öğr.No: 221120251023</p>
+        </div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
